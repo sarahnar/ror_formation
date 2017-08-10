@@ -18,29 +18,31 @@
 
   <body>
 
-  <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
 
-      <a class="navbar-brand" href="<%= root_path %>">Tutoriel Ruby on Rails </a>
-
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        
+      <a class="navbar-brand" href="<%= root_path %>">Ruby on Rails </a>
+   
         <ul class="navbar-nav mr-auto">
          
           <li class="nav-item">
         
-              <a class="nav-link" href="<%= salut_path %>">Salut</a>
-        
+              <a class="nav-link" href="<%= posts_path %>">Articles</a>
+          
+          </li>
+
+          <li class="nav-item">
+
+              <a class="nav-link" href="<%= categories_path %>">Catégories</a>
+
           </li>
       
         </ul>
-
-      </div>
     </nav> 
+
     <div class="container" style="padding-top: 5rem;">
 
-    <%= yield %>
+      <%= yield %>
+  </div>
+
   </body>
 </html>

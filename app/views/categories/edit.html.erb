@@ -1,0 +1,24 @@
+<h1>Editer la Categories</h1>
+    
+<%= form_for @category do |f| %>
+
+    <div class="form-group">
+        
+        <%= f.text_field :name, laceholder: 'Name ', class: 'form-controm' %>
+    
+    </div>
+    
+
+    <div class="form-group">
+        
+        <%= f.text_field :slug, laceholder: 'Url ', class: 'form-controm' %>
+    
+    </div>
+
+    <div class="form-group">
+       
+        <button class="btn btn_primary" type="submit">Modifier la ctégorie</button>    
+    
+    </div>
+
+<% end %>
